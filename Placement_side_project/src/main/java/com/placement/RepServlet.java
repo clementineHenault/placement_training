@@ -53,8 +53,7 @@ public class RepServlet extends HttpServlet {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
-		System.out.println("path: " + request.getContextPath());
+
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/repDetails.jsp");
 		dispatcher.forward(request,  response);
 	}

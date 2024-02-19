@@ -7,6 +7,6 @@
 <title>Success</title>
 </head>
 <body>
-	<h1>User successfully registered!</h1>
+	<h1>User <%=request.getParameter("username")%> successfully registered!</h1>
 </body>
 </html>
