@@ -38,9 +38,12 @@ public class RepServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("request received");
+		
 		// Get the information from the form (from the post request)
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
+		System.out.println("username: " + username);
 		
 		// Create the rep
 		Representative rep = new Representative();
